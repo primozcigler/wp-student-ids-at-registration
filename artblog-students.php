@@ -8,7 +8,7 @@ Plugin Name: Artblog Students
 Plugin URI: http://www.proteusthemes.com
 Description: Plugin made for Artblog.
 Author: Primoz Cigler
-Version: 1.0
+Version: 1.1
 Author URI: http://www.proteusnet.com
 Text domain: artblog_students
 */
@@ -43,7 +43,7 @@ function get_array_of_user_IDs() {
 
 	while ( $all_ids->have_posts() ) {
 		$all_ids->the_post();
-		$out[] = intval( get_the_title() );
+		$out[] = trim( get_the_title() );
 	}
 	wp_reset_postdata();
 
@@ -56,7 +56,7 @@ function artblog_registration_errors ($errors, $sanitized_user_login, $user_emai
 
 	$student_ids = get_array_of_user_IDs();
 
-	if ( ! is_array( $student_ids ) || ! in_array( intval( $_POST['student_id'] ), $student_ids ) ) {
+	if ( ! is_array( $student_ids ) || ! in_array( trim( $_POST['student_id'] ), $student_ids ) ) {
 		$errors->add( 'student_id_error', __('<strong>ERROR</strong>: You must include a valid student ID number.','artblog_students') );
 	}
 
