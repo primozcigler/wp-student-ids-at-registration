@@ -165,3 +165,14 @@ function artblog_students_init() {
 	load_plugin_textdomain( 'artblog_students', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action('plugins_loaded', 'artblog_students_init');
+
+
+
+// custom admin login logo
+function artblog_custom_login_logo() {
+	echo '<style type="text/css">
+	#login h1 a { background-image: url(' . plugin_dir_url( __FILE__ ) . 'arthouse-logo.png); background-size: 198px 120px; margin: 0 0 5px 0; width: 100%; height: 120px; }
+	#login #nav {font-size: 1.5em; font-width: 700;}
+	</style>';
+}
+add_action('login_head', 'artblog_custom_login_logo');
