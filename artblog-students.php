@@ -56,7 +56,7 @@ function artblog_registration_errors ($errors, $sanitized_user_login, $user_emai
 
 	$student_ids = get_array_of_user_IDs();
 
-	if ( ! in_array( intval( $_POST['student_id'] ), $student_ids ) ) {
+	if ( ! is_array( $student_ids ) || ! in_array( intval( $_POST['student_id'] ), $student_ids ) ) {
 		$errors->add( 'student_id_error', __('<strong>ERROR</strong>: You must include a valid student ID number.','artblog_students') );
 	}
 
