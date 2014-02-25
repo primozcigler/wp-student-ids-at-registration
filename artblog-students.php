@@ -82,18 +82,18 @@ function artblog_user_register ($user_id) {
  */
 function artblog_custom_post_types() {
 	$labels = array(
-		'name'               => __( 'Student IDs' ),
-		'singular_name'      => __( 'Student ID' ),
-		'add_new'            => __( 'Add New' ),
-		'add_new_item'       => __( 'Add New Student ID' ),
-		'edit_item'          => __( 'Edit Student ID' ),
-		'new_item'           => __( 'New Student ID' ),
-		'all_items'          => __( 'All Student IDs' ),
-		'view_item'          => __( 'View Student ID' ),
-		'search_items'       => __( 'Search Student IDs' ),
-		'not_found'          => __( 'No Student IDs found' ),
-		'not_found_in_trash' => __( 'No Student IDs found in Trash' ),
-		'menu_name'          => __( 'Student IDs' ),
+		'name'               => __( 'Student IDs', 'artblog_students' ),
+		'singular_name'      => __( 'Student ID', 'artblog_students' ),
+		'add_new'            => __( 'Add New', 'artblog_students' ),
+		'add_new_item'       => __( 'Add New Student ID', 'artblog_students' ),
+		'edit_item'          => __( 'Edit Student ID', 'artblog_students' ),
+		'new_item'           => __( 'New Student ID', 'artblog_students' ),
+		'all_items'          => __( 'All Student IDs', 'artblog_students' ),
+		'view_item'          => __( 'View Student ID', 'artblog_students' ),
+		'search_items'       => __( 'Search Student IDs', 'artblog_students' ),
+		'not_found'          => __( 'No Student IDs found', 'artblog_students' ),
+		'not_found_in_trash' => __( 'No Student IDs found in Trash', 'artblog_students' ),
+		'menu_name'          => __( 'Student IDs', 'artblog_students' ),
 	);
 	$args = array(
 		'labels'              => $labels,
@@ -143,3 +143,25 @@ function save_artblog_postmeta( $post_id ) {
 	}
 }
 add_action( 'save_post', 'save_artblog_postmeta' );
+
+
+
+/**
+ * Redirect non-admins to the homepage after logging into the site.
+ *
+ * @since   1.0
+ */
+function soi_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+} // end soi_login_redirect
+add_filter( 'login_redirect', 'soi_login_redirect', 10, 3 );
+
+
+
+/**
+ * Loading the textdomain
+ */
+function artblog_students_init() {
+	load_plugin_textdomain( 'artblog_students', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action('plugins_loaded', 'artblog_students_init');

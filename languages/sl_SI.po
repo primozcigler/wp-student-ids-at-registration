@@ -1,0 +1,99 @@
+# Copyright (C) 2014 Artblog Students
+# This file is distributed under the same license as the Artblog Students package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Artblog Students 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/artblog-students\n"
+"POT-Creation-Date: 2014-02-25 14:20:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-02-25 15:24+0100\n"
+"Last-Translator: Primoz Cigler <primoz@proteusnet.com>\n"
+"Language-Team: ProteusNet <primoz@proteusnet.com>\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: Slovenian\n"
+
+#: artblog-students.php:27
+msgid "Student ID number"
+msgstr "Vpisna številka študenta"
+
+#: artblog-students.php:60
+msgid "<strong>ERROR</strong>: You must include a valid student ID number."
+msgstr ""
+
+#: artblog-students.php:85 artblog-students.php:96
+msgid "Student IDs"
+msgstr "Vpisne številke"
+
+#: artblog-students.php:86
+msgid "Student ID"
+msgstr "Vpisna številka"
+
+#: artblog-students.php:87
+msgid "Add New"
+msgstr "Dodaj novo"
+
+#: artblog-students.php:88
+msgid "Add New Student ID"
+msgstr "Dodaj novo vpisno številko"
+
+#: artblog-students.php:89
+msgid "Edit Student ID"
+msgstr "Uredi vpisno številko"
+
+#: artblog-students.php:90
+msgid "New Student ID"
+msgstr "Nova vpisna številka"
+
+#: artblog-students.php:91
+msgid "All Student IDs"
+msgstr "Vse vpisne številke"
+
+#: artblog-students.php:92
+msgid "View Student ID"
+msgstr "Poglej vpisno številko"
+
+#: artblog-students.php:93
+msgid "Search Student IDs"
+msgstr "Išči vpisno številko"
+
+#: artblog-students.php:94
+msgid "No Student IDs found"
+msgstr "Ni vpisnih številk"
+
+#: artblog-students.php:95
+msgid "No Student IDs found in Trash"
+msgstr "Ni vpisnih številk v košu"
+
+#: translate/pomo/sample/app.php:56
+msgid "Welcome %s!"
+msgstr "Dobrodošel %s!"
+
+#: translate/pomo/sample/app.php:60
+msgid "A string with low priority!"
+msgstr "A string with low priority!"
+
+#: translate/pomo/sample/app.php:62
+msgid "Bye\n"
+msgstr "Adijo\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Artblog Students"
+msgstr "Artblog Študentje"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.proteusthemes.com"
+msgstr "http://www.proteusthemes.com"
+
+#. Description of the plugin/theme
+msgid "Plugin made for Artblog."
+msgstr "Plugin za Artblog."
+
+#. Author of the plugin/theme
+msgid "Primoz Cigler"
+msgstr "Primoz Cigler"
+
+#. Author URI of the plugin/theme
+msgid "http://www.proteusnet.com"
+msgstr "http://www.proteusnet.com"

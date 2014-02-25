@@ -1,0 +1,97 @@
+# Copyright (C) 2014 Artblog Students
+# This file is distributed under the same license as the Artblog Students package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Artblog Students 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/artblog-students\n"
+"POT-Creation-Date: 2014-02-25 14:20:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: artblog-students.php:27
+msgid "Student ID number"
+msgstr ""
+
+#: artblog-students.php:60
+msgid "<strong>ERROR</strong>: You must include a valid student ID number."
+msgstr ""
+
+#: artblog-students.php:85 artblog-students.php:96
+msgid "Student IDs"
+msgstr ""
+
+#: artblog-students.php:86
+msgid "Student ID"
+msgstr ""
+
+#: artblog-students.php:87
+msgid "Add New"
+msgstr ""
+
+#: artblog-students.php:88
+msgid "Add New Student ID"
+msgstr ""
+
+#: artblog-students.php:89
+msgid "Edit Student ID"
+msgstr ""
+
+#: artblog-students.php:90
+msgid "New Student ID"
+msgstr ""
+
+#: artblog-students.php:91
+msgid "All Student IDs"
+msgstr ""
+
+#: artblog-students.php:92
+msgid "View Student ID"
+msgstr ""
+
+#: artblog-students.php:93
+msgid "Search Student IDs"
+msgstr ""
+
+#: artblog-students.php:94
+msgid "No Student IDs found"
+msgstr ""
+
+#: artblog-students.php:95
+msgid "No Student IDs found in Trash"
+msgstr ""
+
+#: translate/pomo/sample/app.php:56
+msgid "Welcome %s!"
+msgstr ""
+
+#: translate/pomo/sample/app.php:60
+msgid "A string with low priority!"
+msgstr ""
+
+#: translate/pomo/sample/app.php:62
+msgid "Bye\n"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Artblog Students"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.proteusthemes.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin made for Artblog."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Primoz Cigler"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.proteusnet.com"
+msgstr ""
